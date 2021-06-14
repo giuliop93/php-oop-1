@@ -30,9 +30,9 @@ class Movie
 $movie1 = new Movie("Francesco e la borraccia magica", 120);
 $movie2 = new Movie("Francesco e il gatto sulla tastiera", 125);
 
-$movie->setAudience();
+$movie1->setAudience(20);
 
-$movie_audience = $movie->getAudience()
+$movie_audience = $movie1->getAudience(20);
 
 ?>
 
@@ -50,10 +50,10 @@ $movie_audience = $movie->getAudience()
 <body>
     <ul>
         <li>
-            <?php echo ($movie1) ?>
+            <?php echo ($movie1->title) ?>
         </li>
         <li>
-            <?php echo ($movie2) ?>
+            <?php echo ($movie2->title) ?>
         </li>
 
     </ul>
